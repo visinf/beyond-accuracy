@@ -21,6 +21,7 @@
 - [How to use the project 🚀](#how-to-use-the-project-)
 - [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
 - [How to add and test your own model](#how-to-add-and-test-your-own-model)
+- [Citation](#citation)
 
 ## News 📰
 - **2025-03-18:** Paper, code, and models are all released.
@@ -145,5 +146,9 @@ parser.add_argument("--model", required=True,
 python evaluate.py --model yourmodel --params --accuracy --adv_rob --shape_bias --batch_size 32 --file results.xlsx --device cuda:0
 
 ```
+
+## Citation
+
+If you find this project useful, please consider citing:
 
 
