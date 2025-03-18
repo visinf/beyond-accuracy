@@ -1,7 +1,7 @@
 # Beyond Accuracy: What Matters in Designing Well-Behaved Models?
 
 <center>
-    <img src="teaser_figure.png" alt="Description" width="700">
+    <img src="./assets/teaser_figure.png" alt="Description" width="700">
 </center>
 
 ## Table of contents
@@ -23,7 +23,7 @@
 ## Interactive plot 📈
 
 <center>
-    <img src="interactive_plot.png" alt="Description" width="700">
+    <img src="./assets/interactive_plot.png" alt="Description" width="700">
 </center>
 
 ![Alt text](NewScreenshotInteractivePlot.png)
