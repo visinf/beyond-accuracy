@@ -12,6 +12,7 @@
 </div>
 
 ## Table of contents
+- [News](#news)
 - [Benchmark description 📊](#benchmark-description-)
 - [Interactive plot 📈](#interactive-plot-)
 - [Model zoo 🤖🧠](#model-zoo-)
@@ -20,6 +21,9 @@
 - [How to use the project 🚀](#how-to-use-the-project-)
 - [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
 - [How to add and test your own model](#how-to-add-and-test-your-own-model)
+
+## News 📰
+- **2025-03-18:** Paper, code, and models are all released.
 
 ## Benchmark description 📊
 
