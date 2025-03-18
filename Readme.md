@@ -5,16 +5,14 @@
 </center>
 
 ## Table of contents
-- [Beyond Accuracy: What Matters in Designing Well-Behaved Models?](#beyond-accuracy-what-matters-in-designing-well-behaved-models)
-  - [Table of contents](#table-of-contents)
-  - [Benchmark description 📊](#benchmark-description-)
-  - [Interactive plot 📈](#interactive-plot-)
-  - [Model zoo 🤖🧠](#model-zoo-)
-  - [How to install and run the project 🖥️▶️](#how-to-install-and-run-the-project-️️)
-    - [Setting up the environment (conda)](#setting-up-the-environment-conda)
-    - [How to use the project 🚀](#how-to-use-the-project-)
-    - [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
-    - [How to add and test your own model](#how-to-add-and-test-your-own-model)
+- [Benchmark description 📊](#benchmark-description-)
+- [Interactive plot 📈](#interactive-plot-)
+- [Model zoo 🤖🧠](#model-zoo-)
+- [How to install and run the project 🖥️▶️](#how-to-install-and-run-the-project-️️)
+- [Setting up the environment (conda)](#setting-up-the-environment-conda)
+- [How to use the project 🚀](#how-to-use-the-project-)
+- [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
+- [How to add and test your own model](#how-to-add-and-test-your-own-model)
 
 ## Benchmark description 📊
 
