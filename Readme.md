@@ -1,5 +1,9 @@
 # Beyond Accuracy: What Matters in Designing Well-Behaved Models?
 
+$[Robin Hesse](https://robinhesse.github.io)^1$, Doğukan Bağcı, [Bernt Schiele](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/bernt-schiele), [Simone Schaub-Meyer](https://schaubsi.github.io), [Stefan Roth](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp)
+
+[Visual Inferece Lab @ TU Darmstadt](https://www.visinf.tu-darmstadt.de/research_vi/index.en.jsp) [Max Planck Institute for Informatics, SIC](https://www.mpi-inf.mpg.de/publications) [hessian.AI](https://hessian.ai/research/)
+
 <center>
     <img src="./assets/teaser_figure.png" alt="Description" width="700">
 </center>
