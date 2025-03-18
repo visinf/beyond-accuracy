@@ -222,10 +222,7 @@ def main():
     usecols = []
     print(total_models, "model to evaluate")
     
-    # CUDA_VISIBLE_DEVICES=6 python eval.py --model CNN --accuracy --adv_rob --c_rob --ood_rob --object_focus --calibration_error --fairness --shape_bias --size --batch_size 4 --device cuda:0 
-    # CUDA_VISIBLE_DEVICES=7 python eval.py --model CNN --size --batch_size 4 --device cuda:0 
-    
-    ### REMOVE WHEN CODE GOES PUBLIC #########
+    ### REMOVE WHEN CHECKPOINTS BECOME AVAILABLE #########
     models = [model for model in models if model not in NOT_AVAILABLE_MODELS]
     ##########################################
 
