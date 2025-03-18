@@ -35,7 +35,7 @@
 ## Interactive plot 📈
 
 <center>
-    <img src="./assets/interactive_plot.png" alt="Description" width="700">
+    <img src="./assets/interactive_plot.png" alt="Description" width="900">
 </center>
 
 Explore our data from our experiments with this [interactive scatter plot](interactive_plot.html)! Easily visualize relationships between quality dimensions and uncover information by hovering and filtering the data points. Dive in and discover new insights!
