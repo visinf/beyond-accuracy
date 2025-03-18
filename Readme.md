@@ -108,10 +108,7 @@ In the example below, it is shown how you can easily add your own model to the `
 if type == "Name_of_your_Model":
     model= ... #Loading your model
     transform = ... #Specify the image transformations for your model
-
-# If your model is implemented in timm, then you only need to do
-if type == "Name_of_your_Model":
-    timm_name = "timm_name_of_your_model"
+    return StandardModel(model=model, model_name=model_name, transform=transform)
 
 # In evaluate.py please add your model to the arguments for parsing
 parser.add_argument("--model", required=True,
