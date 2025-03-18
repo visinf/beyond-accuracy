@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Beyond Accuracy: What Matters in Designing Well-Behaved Models?</h1>
 
-[**Robin Hesse**](https://robinhesse.github.io)<sup>1</sup>, **Doğukan Bağcı**<sup>1</sup>, [**Bernt Schiele**](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/bernt-schiele)<sup>2</sup>, [**Simone Schaub-Meyer**](https://schaubsi.github.io)<sup>1,3</sup>, [**Stefan Roth**](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp)<sup>1,3</sup>
+[**Robin Hesse**](https://robinhesse.github.io)<sup>1</sup>, [**Doğukan Bağcı**](https://www.linkedin.com/in/dogukan-b-1b4a29211)<sup>1</sup>, [**Bernt Schiele**](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/people/bernt-schiele)<sup>2</sup>, [**Simone Schaub-Meyer**](https://schaubsi.github.io)<sup>1,3</sup>, [**Stefan Roth**](https://www.visinf.tu-darmstadt.de/visual_inference/people_vi/stefan_roth.en.jsp)<sup>1,3</sup>
 
 <sup>1</sup>[Visual Inferece Lab @ TU Darmstadt](https://www.visinf.tu-darmstadt.de/research_vi/index.en.jsp) <sup>2</sup>[Max Planck Institute for Informatics, SIC](https://www.mpi-inf.mpg.de/publications) <sup>3</sup>[hessian.AI](https://hessian.ai/research/)
 
