@@ -1,21 +1,36 @@
 # Beyond Accuracy: What Matters in Designing Well-Behaved Models?
 
-## Table of contents
-1. [Benchmark description](#benchmark-description)
-2. [Interactive plot](#interactive-plot-)
-3. [Model zoo](#model-zoo)
-4. [How to install and run the project](#how-to-install-and-run-the-project)
-5. [How to use the project](#how-to-use-the-project) 
+<center>
+    <img src="teaser_figure.png" alt="Description" width="700">
+</center>
 
-## Benchmark description
+## Table of contents
+- [Beyond Accuracy: What Matters in Designing Well-Behaved Models?](#beyond-accuracy-what-matters-in-designing-well-behaved-models)
+  - [Table of contents](#table-of-contents)
+  - [Benchmark description 📊](#benchmark-description-)
+  - [Interactive plot 📈](#interactive-plot-)
+  - [Model zoo 🤖🧠](#model-zoo-)
+  - [How to install and run the project 🖥️▶️](#how-to-install-and-run-the-project-️️)
+    - [Setting up the environment (conda)](#setting-up-the-environment-conda)
+    - [How to use the project 🚀](#how-to-use-the-project-)
+    - [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
+    - [How to add and test your own model](#how-to-add-and-test-your-own-model)
+
+## Benchmark description 📊
 
 `QUBA` is an open-source benchmark designed to evaluate different quality dimensions of models with the aim of providing a **quality understanding beyond accuracy (QUBA)**. These quality dimensions include the **_accuracy_**, **_adversarial robustness_**, **_corruption robustness_**, **_OOD robustness_**,  **_calibration error_**, **_fairness_**, **_object focus_**, **_shape bias_**, and **_parameters_** of a given model.
 
 ## Interactive plot 📈
+
+<center>
+    <img src="interactive_plot.png" alt="Description" width="700">
+</center>
+
+![Alt text](NewScreenshotInteractivePlot.png)
 Explore our data from our experiments with this [interactive scatter plot](interactive_plot.html)! Easily visualize relationships between quality dimensions and uncover information by hovering and filtering the data points. Dive in and discover new insights!
 **Note: If the link does not work, open the provided file interactive_plot.html directly.**
 
-## Model zoo
+## Model zoo 🤖🧠
 Our model zoo includes 326 models from the computer vision literature. In the following, we list the sources of the weights for each model.
 
 | Source | Models |
@@ -36,7 +51,7 @@ Our model zoo includes 326 models from the computer vision literature. In the fo
 
 You can list all available models and model groups by calling the `list_models()` function in /helper/generate_data.py
 
-## How to install and run the project
+## How to install and run the project 🖥️▶️
 
 ### Setting up the environment (conda)
 
@@ -56,7 +71,7 @@ conda env create -f environment.yml
 conda activate quba
 ```
 
-### How to use the project
+### How to use the project 🚀
 
 ```
 #After setting up the environment and activating it,
@@ -79,7 +94,7 @@ python evaluate.py --model ResNet50 --params --accuracy --adv_rob --c_rob --ood_
 #be in the same folder as the evaluate.py file
 ```
 
-### Setup choices for starting the experiments
+### Setup choices for starting the experiments ✅
 
 | Argument            | Explaination                                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
