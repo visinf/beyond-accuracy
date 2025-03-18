@@ -26,7 +26,6 @@
     <img src="interactive_plot.png" alt="Description" width="700">
 </center>
 
-![Alt text](NewScreenshotInteractivePlot.png)
 Explore our data from our experiments with this [interactive scatter plot](interactive_plot.html)! Easily visualize relationships between quality dimensions and uncover information by hovering and filtering the data points. Dive in and discover new insights!
 **Note: If the link does not work, open the provided file interactive_plot.html directly.**
 
