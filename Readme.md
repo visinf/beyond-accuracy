@@ -27,7 +27,7 @@
 - [Citation](#citation)
 
 ## News 📰
-- **2025-03-18:** Paper, code, and models are all released.
+- **TBD:** Paper, code, and models are all released.
 
 ## Benchmark description 📊
 
