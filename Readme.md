@@ -9,7 +9,7 @@
 <a href="https://opensource.org/licenses/Apache-2.0"><img src='https://img.shields.io/badge/License-Apache%202.0-blue.svg' alt='License'></a>
 
 <center>
-    <img src="./assets/teaser_figure.png" alt="Description" width="900">
+    <img src="./assets/teaser_figure.png" alt="Description" width="500">
 </center>
 
 </div>
