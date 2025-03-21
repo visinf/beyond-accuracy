@@ -38,8 +38,9 @@
     <img src="./assets/interactive_plot.png" alt="Description" width="900">
 </center>
 
-Explore our data from our experiments with this [interactive scatter plot](interactive_plot.html)! Easily visualize relationships between quality dimensions and uncover information by hovering and filtering the data points. Dive in and discover new insights!
-**Note: If the link does not work, open the provided file interactive_plot.html directly.**
+Explore our data from our experiments with this **interactive scatter plot**! Easily visualize relationships between quality dimensions and uncover information by hovering and filtering the data points. Dive in and discover new insights!
+
+**Note: Currently you have to download the [html file](interactive_plot.html) and open it in your browser. There will be a dedicated project page in the near future**
 
 ## How to install and run the project 🖥️▶️
 
