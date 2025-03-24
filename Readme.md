@@ -27,7 +27,7 @@
 - [Citation](#citation)
 
 ## News 📰
-- **TBD:** Paper, code, and models are all released.
+- **24.03.2025:** Paper and code are released.
 
 ## Benchmark description 📊
 
