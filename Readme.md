@@ -154,5 +154,12 @@ You can list all available models and model groups by calling the `list_models()
 ## Citation
 
 If you find this project useful, please consider citing:
-
+```
+@article{Hesse:2025:beyond_accuracy,
+    title={Beyond Accuracy: What Matters in Designing Well-Behaved Models?}, 
+    author={Robin Hesse and Do\u{g}ukan Ba\u{g}c\i and Bernt Schiele and Simone Schaub-Meyer and Stefan Roth},
+    year={2025},
+    journal={arXiv:2503.17110 [cs.CV]},
+    }
+```
 
