@@ -25,7 +25,7 @@
       background-color: #fff;
     }
     .container {
-      max-width: 100%;
+      max-width: 70%;
       padding: 20px;
       box-sizing: border-box;
       width: 100%;
@@ -101,7 +101,7 @@
     .control-group label {
       font-weight: bold;
       margin-bottom: 10px;
-      display: block;
+      display: flex;
     }
     .checkbox-group, .radio-group {
       display: flex;
@@ -115,13 +115,11 @@
       cursor: pointer;
     }
     .plot-container {
-      margin: 20px 0;
       width: 100%;
       overflow-x: auto;
     }
     .table-container {
       margin: 20px 0;
-      overflow-x: auto;
       width: 100%;
     }
     .data-table {
@@ -197,10 +195,10 @@
     }
 
     .acknowledgements p {
-      font-size: clamp(14px, 1.4vw, 18px);
+      font-size: clamp(14px, 1.8vw, 18px);
       line-height: 1.6;
       text-align: justify;
-      margin: 10px 0;
+      margin: 10px 0; 
     }
 
     .abstract h2 {
@@ -7258,35 +7256,6 @@
             
               e(HideableTable, { data, filters }),
 
-                e('div', { style: { textAlign: 'left', width: '100%' } }, [
-                    e('h2', { style: { marginBottom: '15px' } }, 'Acknowledgements'),
-                    e('div', { className: 'acknowledgements', key: 'acknowledgements' }, [
-                    e('p', { style: { verticalAlign: 'super' } }, 'This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 866008). The project has also been funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – project number 529680848. Further, the project has been supported by the State of Hesse through the cluster projects “The Third Wave of Artificial Intelligence (3AI)” and “The Adaptive Mind (TAM).”')
-                    ]),
-                ]),
-
-                e('div', { style: { textAlign: 'left', width: '100%' } }, [
-    // Title
-    e('h2', { style: { marginBottom: '15px' } }, 'Citation'),
-    
-    // Description
-    e('p', { style: { fontSize: '18px', verticalAlign: 'super', marginBottom: '10px' } }, 
-        "If you find this project useful, please consider citing: "
-    ),
-    
-    // Grey Box for Citation
-    e('div', { style: { backgroundColor: '#f4f4f4', padding: '15px', borderRadius: '5px', overflowX: 'auto' } }, [
-        e('pre', { style: { fontSize: '12px', margin: '0', whiteSpace: 'pre-wrap' } }, 
-            `@article{Hesse:2025:beyond_accuracy,
-            title={Beyond Accuracy: What Matters in Designing Well-Behaved Models?}, 
-            author={Robin Hesse and Do\\u{g}ukan Ba\\u{g}c\\i and Bernt Schiele and Simone Schaub-Meyer and Stefan Roth},
-            year={2025},
-2            journal={arXiv:2503.17110 [cs.CV]},
-            }`
-        )
-    ])
-])
-
           ]);
       };
   
@@ -7294,6 +7263,36 @@
       root.render(e(App));
     </script>
 
+    <div style="text-align: 'left'; width: '100%' ">
+        <h2 style="margin-bottom: '15px'">Acknowledgements</h2>
+        <div className="acknowledgements" key="acknowledgements">
+            <p style="vertical-align: 'super'; font-size:18px">
+            This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (grant agreement No. 866008). The project has also been funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – project number 529680848. Further, the project has been supported by the State of Hesse through the cluster projects “The Third Wave of Artificial Intelligence (3AI)” and “The Adaptive Mind (TAM).”
+            </p>
+        </div>
+        </div>
+
+        <div style="text-align: 'left'; width: '100%'">
+
+    <h2 style="margin-bottom: '15px'">Citation</h2>
+
+        <p style="font-size:18px">
+            If you find this project useful, please consider citing:
+        </p>
+
+        <div style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto;">
+            <pre>
+    @article{Hesse:2025:beyond_accuracy,
+        title={Beyond Accuracy: What Matters in Designing Well-Behaved Models?}, 
+        author={Robin Hesse and Do\u{g}ukan Ba\u{g}c\i and Bernt Schiele and Simone Schaub-Meyer and Stefan Roth},
+        year={2025},
+        journal={arXiv:2503.17110 [cs.CV]},
+    }
+            </pre>
+        </div>
+        
+    </div>
+    
     <footer style="text-align: center;">
         <p>&copy; Visual Inference Lab. Licensed under the 
             <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>.
