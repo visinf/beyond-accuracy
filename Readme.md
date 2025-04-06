@@ -6,6 +6,7 @@
 <sup>1</sup>[Technical University of Darmstadt](https://www.visinf.tu-darmstadt.de/research_vi/index.en.jsp) <sup>2</sup>[Max Planck Institute for Informatics, SIC](https://www.mpi-inf.mpg.de/publications) <sup>3</sup>[hessian.AI](https://hessian.ai/research/)
 
 <a href="https://arxiv.org/abs/2503.17110"><img src='https://img.shields.io/badge/arXiv-Beyond_Accuracy-red' alt='Paper PDF'></a>
+<a href="https://visinf.github.io/beyond-accuracy/"><img src='https://img.shields.io/badge/Project_Page-Beyond_Accuracy-blue' alt='Project Page'></a>
 <a href="https://opensource.org/licenses/Apache-2.0"><img src='https://img.shields.io/badge/License-Apache%202.0-blue.svg' alt='License'></a>
 
 <center>
@@ -15,14 +16,15 @@
 </div>
 
 ## Table of contents
-- [News](#news)
+- [Table of contents](#table-of-contents)
+- [News 📰](#news-)
 - [Benchmark description 📊](#benchmark-description-)
 - [Interactive plot 📈](#interactive-plot-)
 - [How to install and run the project 🖥️▶️](#how-to-install-and-run-the-project-️️)
-- [Setting up the environment (conda)](#setting-up-the-environment-conda)
-- [How to use the project 🚀](#how-to-use-the-project-)
-- [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
-- [How to add and test your own model](#how-to-add-and-test-your-own-model)
+  - [Setting up the environment (conda)](#setting-up-the-environment-conda)
+  - [How to use the project 🚀](#how-to-use-the-project-)
+  - [Setup choices for starting the experiments ✅](#setup-choices-for-starting-the-experiments-)
+  - [How to add and test your own model](#how-to-add-and-test-your-own-model)
 - [Model zoo 🤖🧠](#model-zoo-)
 - [Citation](#citation)
 
