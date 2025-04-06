@@ -289,7 +289,7 @@
     <!-- Interactive Plot Section -->
     <div class="project-description">
       <h2>Interactive Plot & Table</h2>
-      <p>Welcome to our interactive plot! Here, you can explore the data used in our analysis to gain deeper insights into specific models or groups of models. Use the checkboxes below the scatterplot to select the subsets you'd like to visualize. You can filter by (pre-)training datasets, architectures, and various training paradigms. Additionally, the selected models will be listed in a table below the check. Also, you can customize the scatterplot by selecting which quality dimensions to display on the x- and y-axes.</p>
+      <p>Welcome to our interactive plot! Here, you can explore the data used in our analysis to gain deeper insights into specific models or groups of models. Use the checkboxes below the scatterplot to select the subsets you'd like to visualize. You can filter by (pre-)training datasets, architectures, and various training paradigms. The selected models will be displayed in a table located below the checkboxes. By default, the table is hidden, but you can reveal it by clicking the 'Show Table' button. Also, you can customize the scatterplot by selecting which quality dimensions to display on the x- and y-axes.</p>
     </div>
     <div class="plot-container">
       <div id="plot"></div>
@@ -7182,6 +7182,32 @@
               ]);
           };
   
+          const { useState } = React;
+
+
+            function HideableTable({ data, filters }) {
+                const [isTableVisible, setIsTableVisible] = useState(true);
+
+                return e('div', null,
+
+                    e('button', { 
+                        onClick: () => setIsTableVisible(!isTableVisible),
+                        style: {
+                            padding: '10px 20px',       
+                            fontSize: '16px',        
+                            fontWeight: 'bold',       
+                            backgroundColor: '#007bff',
+                            color: 'white',    
+                            border: 'none',         
+                            borderRadius: '5px',        
+                            cursor: 'pointer'           
+                        }
+                    }, isTableVisible ? 'Hide Table' : 'Show Table'),
+
+                    isTableVisible && e(InteractiveTable, { data, filters })
+                );
+            }
+
           return e('div', { className: 'container' }, [
               
               
@@ -7229,11 +7255,8 @@
                       onChange: (value) => setFilters(prev => ({ ...prev, yAxis: value }))
                   })
               ]),
-  
-              e(InteractiveTable, { 
-                        data: data,
-                        filters: filters
-                    }),
+            
+              e(HideableTable, { data, filters }),
 
                 e('div', { style: { textAlign: 'left', width: '100%' } }, [
                     e('h2', { style: { marginBottom: '15px' } }, 'Acknowledgements'),
