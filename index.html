@@ -7186,7 +7186,7 @@
 
 
             function HideableTable({ data, filters }) {
-                const [isTableVisible, setIsTableVisible] = useState(true);
+                const [isTableVisible, setIsTableVisible] = useState(false);
 
                 return e('div', null,
 
@@ -7202,7 +7202,7 @@
                             borderRadius: '5px',        
                             cursor: 'pointer'           
                         }
-                    }, isTableVisible ? 'Hide Table' : 'Show Table'),
+                    }, isTableVisible ? 'Show Table' : 'Hide Table'),
 
                     isTableVisible && e(InteractiveTable, { data, filters })
                 );
