@@ -29,7 +29,7 @@ MAE_FT = "./checkpoint/mae_finetuned_vit_base.pth"
 from os.path import join as pjoin
 
 _DATASET_DIR = _MODEL_VS_HUMAN_DIR
-_PROJ_DIR = "/visinf/home/vimb06/code/beyond-accuracy/helper" #Path to helper directory
+_PROJ_DIR = "DUMMY" #Path to helper directory
 _CODE_DIR = pjoin(_PROJ_DIR, "modelvshuman")
 _RAW_DATA_DIR = pjoin(_PROJ_DIR, "raw-data")
 
