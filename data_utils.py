@@ -79,7 +79,7 @@ def compute_normalized_values(file_path, sheet_name):
             normalized_df.to_excel(writer, sheet_name="NORM", index=False)
     return
 
-def compute_quba_score(file_path, sheet_name):
+def compute_quba_score(file_path, sheet_name, custom_weights=None):
     df = pd.read_excel(file_path, sheet_name=sheet_name)
 
     quba_matrix = pd.DataFrame(columns=["Model", "QuBA"])
@@ -87,15 +87,18 @@ def compute_quba_score(file_path, sheet_name):
     for index, row in df.iterrows():
         values = []
         weights = []
-        for column in df.columns:
+        for idx, column in enumerate(df.columns):
             if column == "Model":
                 continue
             else:
                 if column in ["Cal. Err.", "Params"]:
-                    row[column] = row[column] * (-1)
+                    row[column] = row[column] * (-1) 
                 values.append(row[column])
-                weight = 1/3 if column in ["C-Rob.", "Adv. Rob.", "OOD Rob."] else (0.5 if column in ["Shape Bias", "Obj. Foc."] else 1 )
-                weights.append(weight)
+                if custom_weights:
+                    weight = custom_weights[idx]
+                else:
+                    weight = 1/3 if column in ["C-Rob.", "Adv. Rob.", "OOD Rob."] else (0.5 if column in ["Shape Bias", "Obj. Foc."] else 1 )
+                    weights.append(weight)
         assert len(values) == len(weights)
         weights = weights / np.sum(weights)
         quba = np.average(a=values, weights=weights)

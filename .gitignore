@@ -1,10 +1,8 @@
 **/__pycache__/
 *.py[cod]
 *$py.class
-/helper/segmentation/data/*
-**/*lora*/
-**/*conf*/
 
+/.vscode/*
 .history
 *.safetensors
 *.err

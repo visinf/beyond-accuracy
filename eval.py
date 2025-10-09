@@ -102,6 +102,8 @@ parser.add_argument("--shuffle", default=True)
 parser.add_argument('--num_classes', default=1000)
 parser.add_argument('--seed', default=0, type=int, help='seed for initializing training. ')
 parser.add_argument('--compute_corr', default=False, action="store_true", help='computes the rank correlation matrix if true')
+parser.add_argument('--quba_weights', default=None, nargs="+", type=lambda s: [float(x) for x in s.split(",")], help='setting weights for the quba score computation, default is the standard weighting')
+
 
 #Quality Dimensions
 parser.add_argument("--accuracy", default=False, action="store_true",
@@ -251,7 +253,8 @@ def main():
             data_utils.calculate_rank_correlation_with_p(args.file, empty_sheet, usecols)
         else:
             print("Not enough evaluated models or quality dimensions for computing correlation. You need at least two of both.")
-    if usecols == ["Acc", "Adv. Rob.", "C-Rob.", "OOD Rob.", "Cal. Err.", "Fairness", "Params"]:
+    if usecols == ["Acc", "Adv. Rob.", "C-Rob.", "OOD Rob.", "Cal. Err.", "Fairness", "Obj. Foc.",	"Shape Bias", "Params"]:
+        assert len(usecols) == len(args.quba_weights), f"QUBA weights and measured dimensions have different lengths: {args.quba_weights} & {len(usecols)}"
         data_utils.compute_normalized_values(args.file, empty_sheet)
         data_utils.compute_quba_score(args.file, "NORM")
 

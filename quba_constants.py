@@ -83,59 +83,27 @@ OPEN_CLIP_MODELS = {
     "convnext-base-w-320-clip": "hf-hub:laion/CLIP-convnext_base_w_320-laion_aesthetic-s13B-b82K-augreg",
 
     # CLIP trained on Laion2B
-    "clip-laion2b-b16": "hf-hub:laion/CLIP-ViT-B-16-laion2B-s34B-b88K",
-    "clip-laion2b-b32": "hf-hub:laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
-    "clip-laion2b-l14": "hf-hub:laion/CLIP-ViT-L-14-laion2B-s32B-b82K",
+    "CLIP-B16-Laion2B": "hf-hub:laion/CLIP-ViT-B-16-laion2B-s34B-b88K",
+    "CLIP-L14-Laion2B": "hf-hub:laion/CLIP-ViT-L-14-laion2B-s32B-b82K",
 
     # Commonpool 12.8B Variants
-    "clip-dfn2b-l14": "hf-hub:apple/DFN2B-CLIP-ViT-L-14",
-    "clip-dfn2b-b16": "hf-hub:apple/DFN2B-CLIP-ViT-B-16",
-
-    # CommonPool L Models
-    "clip-commonpool-l-b16": "hf-hub:laion/CLIP-ViT-B-16-CommonPool.L-s1B-b8K",
-    "clip-commonpool-l-basic-b16": "hf-hub:laion/CLIP-ViT-B-16-CommonPool.L.basic-s1B-b8K",
-    "clip-commonpool-l-text-b16": "hf-hub:laion/CLIP-ViT-B-16-CommonPool.L.text-s1B-b8K",
-    "clip-commonpool-l-image-b16": "hf-hub:laion/CLIP-ViT-B-16-CommonPool.L.image-s1B-b8K",
-    "clip-commonpool-l-laion-b16": "hf-hub:laion/CLIP-ViT-B-16-CommonPool.L.laion-s1B-b8K",
-    "clip-commonpool-l-clip-b16": "hf-hub:laion/CLIP-ViT-B-16-CommonPool.L.clip-s1B-b8K",
-    "clip-datacomp-l-b16": "hf-hub:laion/CLIP-ViT-B-16-DataComp.L-s1B-b8K",
+    "CLIP-L14-CommonPool-XL-DFN2B": "hf-hub:apple/DFN2B-CLIP-ViT-L-14",
+    "CLIP-B16-CommonPool-XL-DFN2B": "hf-hub:apple/DFN2B-CLIP-ViT-B-16",
 
     # Commonpool XL
-    "clip-datacomp-xl-l14": "hf-hub:laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K", 
-    "clip-commonpool-xl-clip-l14": "hf-hub:laion/CLIP-ViT-L-14-CommonPool.XL.clip-s13B-b90K",
-    "clip-commonpool-xl-laion-l14": "hf-hub:laion/CLIP-ViT-L-14-CommonPool.XL.laion-s13B-b90K",
-    "clip-commonpool-xl-l14": "hf-hub:laion/CLIP-ViT-L-14-CommonPool.XL-s13B-b90K",
-    "clip-datacomp-xl-b16": "hf-hub:laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K",
+    "CLIP-L14-DataCompXL": "hf-hub:laion/CLIP-ViT-L-14-DataComp.XL-s13B-b90K", 
+    "CLIP-B16-DataCompXL": "hf-hub:laion/CLIP-ViT-B-16-DataComp.XL-s13B-b90K",
     "clip-datacomp-xl-b32": "hf-hub:laion/CLIP-ViT-B-32-DataComp.XL-s13B-b90K",
 
-    # "clip-datacomp-m-b32", "clip-commonpool-m-clip-b32", "clip-commonpool-m-laion-b32", "clip-commonpool-m-image-b32", "clip-commonpool-m-text-b32", "clip-commonpool-m-basic-b32", "clip-commonpool-m-nofilter-b32", "clip-datacomp-s-b32", "clip-commonpool-s-clip-b32", "clip-commonpool-s-laion-b32", "clip-commonpool-s-image-b32", "clip-commonpool-s-text-b32", "clip-commonpool-s-basic-b32", "clip-commonpool-s-nofilter-b32",
-    
-    # CommonPool M
-    "clip-datacomp-m-b32": "hf-hub:laion/CLIP-ViT-B-32-DataComp.M-s128M-b4K", 
-    "clip-commonpool-m-clip-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.M.clip-s128M-b4K",
-    "clip-commonpool-m-laion-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.M.laion-s128M-b4K", 
-    "clip-commonpool-m-image-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.M.image-s128M-b4K",
-    "clip-commonpool-m-text-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.M.text-s128M-b4K", 
-    "clip-commonpool-m-basic-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.M.basic-s128M-b4K", 
-    "clip-commonpool-m-nofilter-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.M-s128M-b4K", 
-
-    # CommonPool S
-    "clip-datacomp-s-b32": "hf-hub:laion/CLIP-ViT-B-32-DataComp.S-s13M-b4K", 
-    "clip-commonpool-s-clip-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.S.clip-s13M-b4K", 
-    "clip-commonpool-s-laion-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.S.laion-s13M-b4K", 
-    "clip-commonpool-s-image-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.S.image-s13M-b4K", 
-    "clip-commonpool-s-text-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.S.text-s13M-b4K", 
-    "clip-commonpool-s-basic-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.S.basic-s13M-b4K", 
-    "clip-commonpool-s-nofilter-b32": "hf-hub:laion/CLIP-ViT-B-32-CommonPool.S-s13M-b4K", 
 }
 
 SIGLIP_MODELS = {
-    "siglip-b-16": 'hf-hub:timm/ViT-B-16-SigLIP',
-    "siglip-l-16": 'hf-hub:timm/ViT-L-16-SigLIP',
+    "siglip-b-16": 'hf-hub:timm/ViT-B-16-SigLIP-256',
+    "siglip-l-16": 'hf-hub:timm/ViT-L-16-SigLIP-256',
 }
 
 SIGLIP2_MODELS = {
-    "ViT-B-16-SigLIP2": "ViT-B-16-SigLIP2", 
+    "ViT-B-16-SigLIP2": "ViT-B-16-SigLIP2-256", 
     "ViT-L-16-SigLIP2-256": "ViT-L-16-SigLIP2-256"
 }
 
@@ -538,7 +506,8 @@ TORCH_HUB_MODELS = {
     "ViT-l-14-dinoV2-LP": (lambda: torch.hub.load('facebookresearch/dinov2', 'dinov2_vitl14_lc'), DINOV2_TRANSFORM),
     "ViT-b-14-dinov2-reg-LP": (lambda: torch.hub.load('facebookresearch/dinov2', 'dinov2_vitb14_reg_lc'), DINOV2_TRANSFORM),
     "ViT-s-14-dinov2-reg-LP": (lambda: torch.hub.load('facebookresearch/dinov2', 'dinov2_vits14_reg_lc'), DINOV2_TRANSFORM),
-    "ViT-l-14-dinov2-reg-LP": (lambda: torch.hub.load('facebookresearch/dinov2', 'dinov2_vitl14_reg_lc'), DINOV2_TRANSFORM)
+    "ViT-l-14-dinov2-reg-LP": (lambda: torch.hub.load('facebookresearch/dinov2', 'dinov2_vitl14_reg_lc'), DINOV2_TRANSFORM),
+    "ResNet50-DINO-LP": (lambda: torch.hub.load('facebookresearch/dino:main', 'dino_resnet50'), HIERA_LP_DINOV1_TRANSFORM)
 }
 
 A123_MODELS = {
