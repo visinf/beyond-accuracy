@@ -118,8 +118,8 @@ parser.add_argument("--object_focus", default=False, action="store_true",
                     help="compute the object focus by measuring 1-BG Gap")
 parser.add_argument("--calibration_error", default=False, action="store_true",
                     help="compute calibration error by gmean of ace and ece")
-parser.add_argument("--fairness", default=False, action="store_true",
-                    help="compute fairness measured by gmean of std of mean class accuracies and mean class confidences")
+parser.add_argument("--class_balance", default=False, action="store_true",
+                    help="compute class_balance measured by gmean of std of mean class accuracies and mean class confidences")
 parser.add_argument("--ood_detection", default=False, action="store_true",
                     help="compute ood detection")
 parser.add_argument("--shape_bias", default=False, action="store_true",
@@ -169,13 +169,13 @@ def benchmark(model, dataloader, args):
             usecols.append("Cal. Err.")
             print("Calibration Error Done", results["Cal. Err."])
     
-    if args.fairness:
+    if args.class_balance:
         with torch.no_grad():
-            fair_pred = bench.test_fairness(model, dataloader, args.device, args.num_classes)
+            fair_pred = bench.test_fair_accuracies(model, dataloader, args.device, args.num_classes)
             fair_conf = bench.test_fair_confidence(model, dataloader, args.device)
-            results["Fairness"] = [gmean([fair_conf, fair_pred])]
-            usecols.append("Fairness")
-            print("Fairness done", results["Fairness"])
+            results["Class Balance"] = [gmean([fair_conf, fair_pred])]
+            usecols.append("Class Balance")
+            print("Class Balance done", results["Class Balance"])
     
     if args.object_focus:
         with torch.no_grad():

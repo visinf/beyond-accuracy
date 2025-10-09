@@ -304,9 +304,9 @@ def _test_r_robustness(model, args):
     acc = correct /total
     return [acc]
 
-def test_fairness(model, loader, device, num_classes=1000):
+def test_fair_accuracies(model, loader, device, num_classes=1000):
     """
-    Tests the fairness of the specified model on a given dataset
+    Tests the class accuracy balance of the specified model on a given dataset
 
     :param model: the model to test
     :param device: the device to compute it on
@@ -315,7 +315,7 @@ def test_fairness(model, loader, device, num_classes=1000):
 
     fairness_eval = MulticlassConfusionMatrix(num_classes=num_classes).to(device)
     total = 0
-    print("Computing Prediction Fairness...")
+    print("Computing Prediction Balance...")
     for input, target in tqdm(loader):
         input = input.to(device)
         target = target.to(device)
@@ -336,9 +336,17 @@ def test_fairness(model, loader, device, num_classes=1000):
     return 1 - std.cpu().item()
 
 def test_fair_confidence(model, loader, device):
+    """
+    Tests the class confidence balance of the specified model on a given dataset
+
+    :param model: the model to test
+    :param loader: the dataloader
+    :param device: the device
+    :return: The standard deviation of the class accuracies
+    """
 
     results = {}
-    print("Computing Confidence Fairness...")
+    print("Computing Confidence Balance...")
     for input, target in tqdm(loader):
         input = input.to(device)
         target = target.to(device)
