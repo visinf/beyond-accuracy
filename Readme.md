@@ -34,7 +34,18 @@
 
 ## Benchmark description 📊
 
-`QUBA` is an open-source benchmark designed to evaluate different quality dimensions of models with the aim of providing a **quality understanding beyond accuracy (QUBA)**. These quality dimensions include the **_accuracy_**, **_adversarial robustness_**, **_corruption robustness_**, **_OOD robustness_**,  **_calibration error_**, **_class_balance_**, **_object focus_**, **_shape bias_**, and **_parameters_** of a given model.
+**QUBA** (**Q**uality **U**nderstanding **B**eyond **A**ccuracy) is a holistic benchmark designed to evaluate computer vision models across **9 distinct quality dimensions**. 
+
+* 🥇 **Accuracy (↑):** Standard Top-1 performance on the clean ImageNet validation set.
+* 🛡️ **Adversarial Robustness (↑):** Measures the model's resistance to malicious perturbations and attacks
+* 🌪️ **Corruption Robustness (↑):** Evaluates performance  on image corruptions (noise, blur, weather etc.) using ImageNet-C.
+* 👽 **OOD Robustness (↑):** Tests the model's accuracy on Out-Of-Distribution samples.
+* ⚖️ **Calibration Error (↓):** Quantifies how well the predicted confidence scores align with the actual accuracy
+* 🎯 **Class Balance (↑):** Analyzes the uniformity of performance across different classes, measuring consistent behavior across the entire dataset.
+* 🧠 **Shape Bias (↑):** Determines whether the model relies more on object shape (human-like perception) or texture details for classification.
+* 🔍 **Object Focus (↑):** Measures the model's ability to make decisions based on the foreground and not the background.
+* 📏 **Parameters (↓):** The size  of the model, enabling analysis of the trade-offs between model scale and behavioral quality.
+
 
 ## Interactive plot 📈
 
@@ -52,10 +63,10 @@ In the following it is shown how to set up the environment with conda:
 
 ```
 #Choose a folder to clone the repository
-git clone .....
+git clone https://github.com/visinf/beyond-accuracy.git
 
 #Move to the cloned folder
-cd QUBA
+cd beyond-accuracy
 
 #Use the provided environment.yml file to create the conda environment
 conda env create -f environment.yml
@@ -68,8 +79,8 @@ conda activate quba
 
 ```
 #After setting up the environment and activating it,
-#move into the QUBA folder
-cd QUBA
+#move into the beyond-accuracy folder
+cd beyond-accuracy
 
 #Before starting the experiments, please specify the directory in which the datasets are located as well as where the helper directory is located. This must be done in the quba_constanty.py file. Only the constants _DATA_DIR and _PROJ_DIR have to be changed for the datasets. 
 The quba_constants.py file is located in ./QUBA/helper.
@@ -84,7 +95,7 @@ python evaluate.py --model ResNet50 --params --accuracy --adv_rob --c_rob --ood_
 
 #The runtime depends on the device you are using for computation.
 #The raw results are stored in the specified excel file, which should
-#be in the same folder as the evaluate.py file
+#be in the same folder as the eval.py file
 ```
 
 ### Setup choices for starting the experiments ✅
@@ -133,7 +144,10 @@ python evaluate.py --model yourmodel --params --accuracy --adv_rob --shape_bias 
 ```
 
 ## Model zoo 🤖🧠
-Our model zoo includes 326 models from the computer vision literature. In the following, we list the sources of the weights for each model.
+Our model zoo includes **326 models** from computer vision literature. Click below to expand the full list of sources and weights.
+
+<details>
+<summary><strong>👇 Click to expand the full Model Zoo list</strong></summary>
 
 | Source | Models |
 |----------|----------|
@@ -150,6 +164,8 @@ Our model zoo includes 326 models from the computer vision literature. In the fo
 [`moboehle`](https://github.com/moboehle/B-cos)|`bcos-convnext-base`, `bcos-convnext-tiny`, `bcos-DenseNet121`, `bcos-DenseNet161`, `bcos-DenseNet169`, `bcos-DenseNet201`, `bcos-ResNet152`, `bcos-ResNet18`, `bcos-ResNet34`, `bcos-ResNet50`, `bcos-simple-vit-b-patch16-224`, `bcos-ResNet101`|
 [`OpenCLIP`](https://github.com/mlfoundations/open_clip)|`metaclip-b16`, `convnext-large-d-clip`, `metaclip-l14`, `convnext-base-w-320-clip`, `convnext-large-d-320-clip`|
 `Trained by us. Checkpoints will be published upon the acceptance of the paper` | `Hiera-B-LP`, `Hiera-S-LP`, `Hiera-T-LP`, `ViTB-DINO-FT`, `ResNet50-DINO-FT`, `vit-b-16-mae-lp`, `ViT-l-14-dinoV2-FT`, `ViT-b-14-dinoV2-FT`, `ViT-s-14-dinoV2-FT`, `ViT-l-14-dinoV2-FT-Reg`, `ViT-b-14-dinoV2-FT-Reg`, `ViT-s-14-dinoV2-FT-Reg`
+
+</details>
 
 You can list all available models and model groups by calling the `list_models()` function in /helper/generate_data.py
 
