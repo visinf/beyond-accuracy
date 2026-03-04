@@ -5,7 +5,6 @@
 
 <sup>1</sup>[Technical University of Darmstadt](https://www.visinf.tu-darmstadt.de/research_vi/index.en.jsp) <sup>2</sup>[Max Planck Institute for Informatics, SIC](https://www.mpi-inf.mpg.de/publications) <sup>3</sup>[hessian.AI](https://hessian.ai/research/) <sup>4</sup>[Zuse School ELIZA](https://eliza.school)
 
-<div align="center">
 <h3>🏆 TMLR Featured Certification</h3>
     
 <a href="https://arxiv.org/abs/2503.17110"><img src='https://img.shields.io/badge/arXiv-Beyond_Accuracy-red' alt='Paper PDF'></a>
