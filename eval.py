@@ -120,8 +120,6 @@ parser.add_argument("--calibration_error", default=False, action="store_true",
                     help="compute calibration error by gmean of ace and ece")
 parser.add_argument("--class_balance", default=False, action="store_true",
                     help="compute class_balance measured by gmean of std of mean class accuracies and mean class confidences")
-parser.add_argument("--ood_detection", default=False, action="store_true",
-                    help="compute ood detection")
 parser.add_argument("--shape_bias", default=False, action="store_true",
                     help="compute shape bias on modelvshuman dataset")
 parser.add_argument("--params", default=False, action="store_true",
